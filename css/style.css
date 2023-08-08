@@ -3,7 +3,7 @@
 .svg-logo > svg {
   height: 50px;
 }
-svg {
+span > svg {
   height: 25px;
   fill: white;
 }
@@ -40,10 +40,11 @@ ul > li {
   background-color: #e2e8f0;
 }
 
-/*TODO Sidebar Styling */
+/*! Sidebar Styling */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .logo {
   font-family: "Roboto", sans-serif;
@@ -59,7 +60,9 @@ ul {
   flex-direction: column;
   gap: 1.5rem;
 }
-
+.sidebar-pages > ul > li {
+  cursor: pointer;
+}
 .list-item > span {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
@@ -67,12 +70,34 @@ ul {
   align-items: center;
   gap: 0.5rem;
   font-weight: lighter;
+  transition: all 100ms;
+}
+.sidebar-pages > ul > li:hover {
+  transform: scale(1.1);
+  transition: all 100ms;
+}
+.sidebar-pages > ul > li:active {
+  transition: all 35ms;
+
+  transform: scale(1);
 }
 .sidebar-technical > ul > .list-item > span {
   font-size: 1rem;
   font-weight: 800;
 }
-
+.sidebar-technical > ul > li {
+  cursor: help;
+}
+.sidebar-technical > ul > li:hover {
+  transform: scale(1.05);
+}
+.sidebar-technical > ul > li:active {
+  transform: scale(0.97);
+  transition: all 35ms;
+}
+.sidebar-technical > ul > li:first-child {
+  cursor: pointer;
+}
 /*TODO Header Styling  */
 
 /*TODO Content Styling  */
