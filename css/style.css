@@ -3,6 +3,12 @@
 .svg-logo > svg {
   height: 50px;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 span > svg {
   height: 25px;
   fill: white;
@@ -99,7 +105,35 @@ ul {
   cursor: pointer;
 }
 /*TODO Header Styling  */
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
+.header > * {
+}
+
+.header-search {
+  display: grid;
+  align-items: center;
+}
+
+.search-container {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar {
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  width: min(100%, 600px);
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: gray;
+}
 /*TODO Content Styling  */
 
 /*! responsive Section */
