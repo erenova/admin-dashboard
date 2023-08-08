@@ -1,4 +1,4 @@
-# CSS Grid Practice: Admin Dashboard
+# Admin Dashboard
 
 This project aims to use CSS Grid mostly to create a non-functional admin dashboard. It serves as a practice ground for honing CSS skills, particularly focusing on CSS Grid layout techniques.
 
