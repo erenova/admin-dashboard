@@ -23,10 +23,6 @@ To view the project, simply:
 
 Feel free to explore the code and see how CSS Grid is implemented in various components of the dashboard.
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 Built with ❤️ as a part of The Odin Project's Web Development Curriculum, focusing on learning and growth.
