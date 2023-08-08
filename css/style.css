@@ -1,0 +1,89 @@
+/* Technical Styling Area */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital@0;1&display=swap");
+.svg-logo > svg {
+  height: 50px;
+}
+svg {
+  height: 25px;
+  fill: white;
+}
+ul > li {
+  list-style: none;
+}
+/** Layout Styling */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+  color: white;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+
+  background-color: #0284c7;
+}
+
+.header {
+  z-index: 1;
+  background-color: #f8fafc;
+  box-shadow: 2px 7px 16px 0px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 2px 7px 16px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 2px 7px 16px 0px rgba(0, 0, 0, 0.29);
+}
+
+.content {
+  background-color: #e2e8f0;
+}
+
+/*TODO Sidebar Styling */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list-item > span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: lighter;
+}
+.sidebar-technical > ul > .list-item > span {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/*TODO Header Styling  */
+
+/*TODO Content Styling  */
+
+/*! responsive Section */
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-height: 700px) {
+  .container {
+    grid-template-rows: 2fr 5fr;
+  }
+}
