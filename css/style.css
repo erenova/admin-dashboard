@@ -108,6 +108,7 @@ ul {
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .header > * {
@@ -132,7 +133,29 @@ ul {
   outline: none;
   border: none;
   border-radius: 1rem;
-  background-color: gray;
+  background-color: #e5e7eb;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.profile-mini-self {
+  border: 2px solid #0284c7;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.profile-name {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: "roboto";
+}
+
+.header-item {
 }
 /*TODO Content Styling  */
 
