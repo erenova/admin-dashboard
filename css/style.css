@@ -407,7 +407,7 @@ button:active {
   cursor: pointer;
 }
 
-.bell:hover {
+.shake-animation {
   animation: shake 0.5s linear;
 }
 @keyframes shake {
