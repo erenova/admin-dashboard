@@ -3,6 +3,13 @@
 .svg-logo > svg {
   height: 50px;
 }
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 *,
 *::after,
 *::before {
@@ -23,6 +30,13 @@ ul > li {
 .card-svg > svg {
   fill: black;
 }
+
+.user-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
 /** Layout Styling */
 
 .container {
@@ -301,7 +315,7 @@ button:active {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  border: 1px solid black;
+  gap: 10px;
 }
 
 .announcements-header {
@@ -309,11 +323,75 @@ button:active {
   font-family: "roboto";
   font-weight: bolder;
 }
-
-.trending-section {
-  grid-area: 2/2/3/3;
+.announcements-card {
+  background-color: whitesmoke;
+  padding: 3rem;
+  border-radius: 1rem;
+  flex: 1;
+  box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
 }
 
+.ann-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+.ann-header {
+  font-size: 1.1rem;
+  font-family: "roboto";
+  font-weight: bolder;
+}
+.ann-item {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid gray;
+}
+.trending-section {
+  grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 10px;
+}
+
+.trending-header {
+  font-size: 1.3rem;
+  font-family: "roboto";
+  font-weight: bolder;
+}
+
+.trending-card {
+  background-color: whitesmoke;
+  padding: 3rem;
+  border-radius: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nick {
+  font-family: "roboto";
+  font-weight: bolder;
+}
+.tag {
+  color: gray;
+}
 /*! responsive Section */
 
 @media only screen and (max-width: 768px) {
