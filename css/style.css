@@ -122,9 +122,6 @@ ul {
   grid-template-rows: 1fr 1fr;
 }
 
-.header > * {
-}
-
 .header-search {
   display: grid;
   align-items: center;
@@ -173,7 +170,7 @@ ul {
 .header-welcome {
   display: flex;
   margin-left: 12rem;
-  margin-r: 12rem;
+  margin-right: 12rem;
   align-items: center;
   gap: 3rem;
 }
@@ -224,8 +221,6 @@ button:active {
   cursor: default;
 }
 
-.header-item {
-}
 /*TODO Content Styling  */
 .content {
   display: grid;
@@ -255,7 +250,9 @@ button:active {
 }
 
 .card {
+  max-width: 100%;
   display: flex;
+  overflow: auto;
   background-color: whitesmoke;
   border-radius: 0.5rem;
   box-shadow: 10px 10px 5px 0px rgba(194, 194, 194, 0.64);
@@ -268,16 +265,55 @@ button:active {
   width: calc(0.1rem + 2%);
   background-color: #f0b429;
 }
+.card-main {
+  margin-top: 1rem;
+  font-family: "roboto";
+  padding: 1rem;
+  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-text {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1rem;
+  gap: 0.2rem;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+.card-description {
+  color: gray;
+
+  width: 75%;
+}
+
+.card-interactions {
+  display: flex;
+  gap: 1.5rem;
+  align-self: flex-end;
+}
 
 .announcements-section {
   grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid black;
 }
+
+.announcements-header {
+  font-size: 1.3rem;
+  font-family: "roboto";
+  font-weight: bolder;
+}
+
 .trending-section {
   grid-area: 2/2/3/3;
 }
 
-.content > * {
-}
 /*! responsive Section */
 
 @media only screen and (max-width: 768px) {
